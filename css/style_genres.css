@@ -1,0 +1,51 @@
+.menu a:nth-child(5){
+    text-decoration: underline;
+}
+.menu a:nth-child(1), a:nth-child(3){
+    text-decoration: none;
+}
+.menu a:hover {
+    text-decoration: underline;
+}
+
+
+
+.main_cont {
+    display:flex;
+    flex-wrap: wrap;
+}
+section{
+    width: 100%;
+}
+.sec{
+    height: fit-content;
+    width: fit-content;
+    border:solid;
+    padding: 40px;
+    margin: 40px;
+    border-radius: 20px;
+    background-color: #f0f0f0;
+    display: flex;
+    flex-flow: column;
+}
+.sec1, .sec3 {
+    border-color: rgb(36, 32, 32);
+}
+.sec2 {
+    border-color: rgb(235, 9, 66);
+}
+.sec h5{
+    margin-bottom: 15px;
+}
+.sec:hover{
+    transform: scale(1.1);
+    transition: 0.5s;
+}
+img{
+    border:double;
+    border-width: 5px;
+    border-color:black;
+    border-radius: 10px;
+    width: 250px;
+    height: 350px;
+}

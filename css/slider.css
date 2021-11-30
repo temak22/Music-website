@@ -1,0 +1,111 @@
+#slider{
+    overflow: hidden;
+    width: 60%;
+    /*height: 500px;*/
+    margin: 0 auto;
+}
+.ratio-inner {
+    position: relative;
+    height: 0;
+    border: none;
+    padding-top: 62.5%; /* Соотношение 8 к 5 */
+}
+.ratio-content {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+#slider figure{
+    position: relative;
+    width: 400%;
+    height: 100%;
+    margin: 0;
+    left: 0;
+    animation: 40s slider infinite;
+}
+
+
+
+@keyframes slider
+{
+    0% { left: 0; }
+    20% { left: 0; }
+    25% { left: -100%; }
+    45% { left: -100%; }
+    50% { left: -200%; }
+    70% { left: -200%; }
+    75% { left: -300%; }
+    95% { left: -300%; }
+    100% { left: 0; }
+}
+
+
+#slider figure .box{
+    float: left;
+    width: 25%;
+    height: 100%;
+    overflow: hidden;
+    box-shadow: 0px 0px 15px 0px #666,
+                0px 5px 15px 0px #000;
+}
+#slider figure .box:nth-child(1){
+    background: url("slider_img/blinding_lights.jpg");
+    background-size: 100% 100%;
+}
+#slider figure .box:nth-child(2){
+    background: url("slider_img/adele.jpg");
+    background-size: 100% 100%;
+}
+#slider figure .box:nth-child(3){
+    background: url("slider_img/jay-z.jpg");
+    background-size: 100% 100%;
+}
+#slider figure .box:nth-child(4){
+    background: url("slider_img/grammy.jpg");
+    background-size: 100% 100%;
+}
+.cover{
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.45);
+    position: relative;
+    transition: all 0.2s cubic-bezier(.99,.99,0,.61);
+    color: #fff;
+    overflow: hidden;
+    text-shadow: 1px 1px 0px #000;
+}
+.cover .title{
+    font-size: 2vw;
+    font-style: italic;
+    margin-right: 30px;
+    margin-top: 2%;
+    margin-left: 3%;
+    height: 15%;
+}
+.cover .intro{
+    line-height: 1.2em;
+    height: 85%;
+    width:fit-content;
+    position: relative;
+    font-size: 1vw;
+    overflow: hidden;
+    margin-right: 30px;
+    margin-left: 3%;
+}
+
+.box:hover .bottom {
+    transition: all 2s ease-in;
+    bottom: 0px;
+}
+
+.bottom{
+   bottom: -80%;
+}
+
+.row-slider{
+    display: flex;
+    flex-flow: row;
+}

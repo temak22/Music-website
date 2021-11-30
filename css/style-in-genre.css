@@ -1,0 +1,28 @@
+.menu a:nth-child(1){
+    text-decoration: none;
+}
+.menu a:hover {
+    text-decoration: underline;
+}
+
+
+section{
+    margin-right: 20px;
+    margin-bottom: 30px;
+}
+.pic{
+    float: right;
+    display: flex;
+    flex-flow: column;
+}
+.pic .img1{
+    margin: 15px;
+    margin-bottom: 1px;
+    margin-top: 3px;
+    padding: 3px;
+    border: double;
+    border-color: black;
+}
+.pic p{
+    font-size: small;
+}

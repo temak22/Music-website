@@ -1,0 +1,7 @@
+@media all and (max-width: 820px) {
+    .pic{
+        float: none;
+        align-items: center;
+        margin-bottom: 20px;
+    }
+}

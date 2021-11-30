@@ -1,0 +1,9 @@
+.menu a:nth-child(3){
+    text-decoration: underline;
+}
+.menu a:nth-child(1), a:nth-child(5){
+    text-decoration: none;
+}
+.menu a:hover {
+    text-decoration: underline;
+}

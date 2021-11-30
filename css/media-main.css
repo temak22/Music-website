@@ -1,0 +1,28 @@
+@media all and (max-width: 720px) {
+    .main section #slider{
+        width: 98%;
+    }
+    .main section #slider .cover .title{
+        font-size: 3vw;
+    }
+    .main section #slider .cover .intro{
+        font-size: 1.8vw;
+    }
+    
+    .main section .row{
+        flex-wrap: wrap;
+        margin-left: 0px;
+    }
+    .main section .row .artist:nth-child(1) {
+        margin-left: 0px;
+    }
+    .main section .row .album:nth-child(1) {
+        margin-left: 0px;
+    }
+    .main section .row .album {
+        margin-bottom: 10px;
+    }
+    .main section .row .artist {
+        margin-bottom: 10px;
+    }
+}

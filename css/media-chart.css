@@ -1,0 +1,17 @@
+@media all and (max-width: 960px) {
+    .song_row .name p{
+        font-size: small;
+    }
+    .song_row .artist p{
+        font-size: small;
+    }
+}
+
+@media all and (max-width: 550px) {
+    .song_row .name p{
+        font-size: 60%;
+    }
+    .song_row .artist p{
+        font-size: 60%;
+    }
+}
